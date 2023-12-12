@@ -90,3 +90,18 @@ const somar3 = (x,y) => x + y;
 console.log(somar(10,5));
 console.log(somar2(10,6));
 console.log(somar3(10,7));
+
+//EX06 Lista
+const input = document.querySelector('input');
+const lista = document.querySelector('ul');
+
+function handleKeyUp(e){
+    if (e.key === 'Enter'){
+        const novoLi = document.createElement('li');
+        novoLi.innerHTML = input.value;
+        lista.appendChild(novoLi);
+        input.value = '';
+    }
+}
+
+input.addEventListener('keyup', handleKeyUp);
