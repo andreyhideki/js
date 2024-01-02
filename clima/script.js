@@ -2,7 +2,7 @@ document.querySelector('.busca').addEventListener('submit',  async(event) => {
     event.preventDefault();
 
     let search = document.querySelector('#searchInput').value;
-    let key = '4a5fa906cfbb32acc4734233eee9ea50';
+    let key = 'API_KEY';
     console.log(search);
 
     if(search !== '') {
