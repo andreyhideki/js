@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Temperatura</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Clima Temepratura</h1>
+
+    <form class="busca">
+        <input type="search" id="searchInput" />
+        <button>Buscar</button>
+    </form>
+
+    <div class="resultado">
+        <div class="titulo">--</div>
+
+        <div class="info">
+            <div class="temp">
+                <div class="tempTitulo">Temperatura</div>
+                <div class="tempInfo">-- <sup>ºC</sup></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+            </div>
+            <div class="vento">
+                <div class="ventoTitulo">Vento</div>
+                <div class="ventoInfo">-- <span>km/h</span></div>
+                <div class="ventoArea">
+                    <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="info">
+            <div class="temp">
+                <div class="tempMaximoTitulo">Temp.Máx</div>
+                <div class="tempMaximo">--</div>
+
+                <div class="tempFeelsLikeTitulo">Sensação Térmica</div>
+                <div class="tempFeelsLike">--</div>
+            </div>
+            <div class="temp">
+                <div class="tempMinimoTitulo">Temp.Min</div>
+                <div class="tempMinimo">--</div>
+
+                <div class="humidityTitulo">Humidade</div>
+                <div class="humidity">--</div>
+            </div>
+        </div>
+    </div>
+    <div class="aviso"></div>
+    <script src="script.js"></script>
+</body>
+</html>
