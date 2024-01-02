@@ -65,5 +65,3 @@ function clearInfo(){
     showMessage('');
     document.querySelector('.resultado').style.display = 'none';
 }
-
-//console.log(process.env.KEY_OPENWEATHERMAP);
